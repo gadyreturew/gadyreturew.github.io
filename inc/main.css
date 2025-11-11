@@ -2,7 +2,6 @@
 
 .bwr {
     word-wrap: break-word;
-    word-break: break-all;
 }
 .resp-container {
     position: relative;
@@ -14,8 +13,12 @@
 .resp-container img{
     width: 100%;
 }
+
 embed,
 iframe,
 object {
 	max-width: 100%;
+}
+div#disqus_thread iframe[sandbox] {
+        max-height: 0px !important;
 }
